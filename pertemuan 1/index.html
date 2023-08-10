@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPLG 2 Bumi Denpasar</title>
+    <style>
+        body {
+            background-image: url("bg.jpg");
+            background-size: cover;
+        }
+        .motor {
+            height: 150px;
+        }
+        .mobil {
+            height: 100px;
+            transform: scaleX(-1);
+        }
+        .title {
+            color: white;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #000000;
+        }
+        .credit {
+            color: aqua ;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <marquee direction="left" class="title">
+        Traffic game
+    </marquee>
+    <marquee direction="right" class="credit">
+        By Bumi Denpasar
+    </marquee>
+
+   
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <marquee onMouseOut="this.start()" onMouseOver="this.stop()" direction="right">
+        <img class="motor" src="mtr.gif" alt="motor">
+        <img class="motor" src="mtr.gif" alt="motor">
+
+    </marquee>
+    
+    <marquee onMouseOut="this.start()" onMouseOver="this.stop()" direction="left" >
+        <img class="mobil" src="car.gif" alt="mobil">
+    </marquee>
+</body>
+</html>
